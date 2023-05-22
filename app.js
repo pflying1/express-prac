@@ -24,14 +24,7 @@ const samsungDataObject = {
 const server = http.createServer((request, response) => {
   //매개변수 request의 요청방식을 GET으로 요청
   if (request.method === "GET") {
-    //헤더정보를 내보내기
     response.writeHead(200, { "Content-Type": "text/html" });
-    /*헤더정보를 text타입을 html로 했을 경우*/
-    /*굳이 볼 필요없음 */
-    //response.writeHead(200, {'Content-Type' : 'text/html'});
-    /*컨텐츠 출력완료
-     * 컨텐츠 출력방식을 보통과 html백틱방식 두가지로 만듬.*/
-    // response.end('This is Team NAR');
     response.end(`<!DOCTYPE html>
     <html lang="en">
     <head>
